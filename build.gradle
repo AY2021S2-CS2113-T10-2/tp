@@ -28,15 +28,18 @@ test {
     }
 }
 
+// run main application
 application {
     mainClassName = "seedu.duke.Duke"
 }
 
+// helps you build the artefact automatically
 shadowJar {
     archiveBaseName = "duke"
     archiveClassifier = null
 }
 
+// run checkstyle (thanks to the gradle plugin)
 checkstyle {
     toolVersion = '8.23'
 }
